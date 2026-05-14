@@ -1,4 +1,4 @@
-# Architecture Decision Records — confhub
+# Architecture Decision Records — evt-hub
 
 Each ADR follows the format: **Status · Context · Decision · Consequences**.
 Status: `Accepted` | `Superseded by ADR-NNN` | `Deprecated`.

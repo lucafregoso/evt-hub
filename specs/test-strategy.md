@@ -1,4 +1,4 @@
-# Test Strategy — confhub
+# Test Strategy — evt-hub
 
 **Philosophy:** Quality over coverage numbers. Tests must give confidence, not create ceremony.
 The test suite is the executable version of the acceptance criteria in the PRD.
@@ -95,7 +95,7 @@ describe('Session state machine', () => {
 // apps/api/tests/integration/sessions/accept-session.test.ts
 import { describe, it, expect, beforeAll, afterAll } from 'vitest'
 import { buildApp } from '../../src/app'
-import { prisma } from '@confhub/db'
+import { prisma } from '@evt-hub/db'
 
 describe('POST /api/v1/events/:eventId/sessions/:sessionId/accept', () => {
   let app: FastifyInstance

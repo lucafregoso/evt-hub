@@ -1,10 +1,10 @@
-# Error Catalog — confhub
+# Error Catalog — evt-hub
 
 All API errors follow **RFC 7807 Problem Details**:
 
 ```json
 {
-  "type": "https://confhub.io/errors/<error-slug>",
+  "type": "https://evt-hub.io/errors/<error-slug>",
   "title": "Human-readable error title",
   "status": 422,
   "detail": "Specific context for this occurrence.",

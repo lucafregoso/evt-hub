@@ -1,4 +1,4 @@
-# Project Plan — confhub
+# Project Plan — evt-hub
 
 **Status**: DRAFT | **Version**: 0.1.0
 
@@ -6,7 +6,7 @@
 
 ### Wave 1: Core Foundation (The Monorepo & Auth)
 - **Epic E01**: Infrastructure & Monorepo Setup (Turbo, pnpm, Docker)
-- **Epic E02**: Database Schema & Shared Packages (@confhub/db, @confhub/shared)
+- **Epic E02**: Database Schema & Shared Packages (@evt-hub/db, @evt-hub/shared)
 - **Epic E03**: Auth Service (F01) - Login, Register, Roles
 
 ### Wave 2: Event & Session Lifecycle

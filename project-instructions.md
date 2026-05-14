@@ -1,5 +1,5 @@
 <!-- template-version: 2 -->
-# confhub Project Instructions
+# evt-hub Project Instructions
 
 ## Core Principles
 

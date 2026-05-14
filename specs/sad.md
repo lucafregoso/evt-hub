@@ -1,9 +1,9 @@
-# Software Architecture Document (SAD) — confhub
+# Software Architecture Document (SAD) — evt-hub
 
 **Status**: DRAFT | **Version**: 0.1.0
 
 ## System Overview
-`confhub` is a TypeScript monorepo using Turborepo and pnpm. It follows a modular monolith architecture for the API, with a separate worker for background tasks and a SvelteKit frontend.
+`evt-hub` is a TypeScript monorepo using Turborepo and pnpm. It follows a modular monolith architecture for the API, with a separate worker for background tasks and a SvelteKit frontend.
 
 ## Directory Structure
 Refer to `specs/STRUCTURE.md` for the detailed monorepo layout.

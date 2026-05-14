@@ -1,4 +1,4 @@
-# State Machines — confhub
+# State Machines — evt-hub
 
 All state machines live in `packages/shared/src/state-machines/`.
 Use the `transition(currentState, event, context)` exported function — never update status directly via Prisma.

@@ -1,4 +1,4 @@
-# Deployment & Operations (DOD) — confhub
+# Deployment & Operations (DOD) — evt-hub
 
 **Status**: DRAFT | **Version**: 0.1.0
 

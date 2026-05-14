@@ -1,7 +1,7 @@
-# STRUCTURE.md — Monorepo layout (confhub)
+# STRUCTURE.md — Monorepo layout (evt-hub)
 
 ```
-confhub/
+evt-hub/
 │
 ├── apps/
 │   ├── api/                     # Fastify 5 API server (port 3001)

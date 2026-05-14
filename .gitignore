@@ -1,0 +1,12 @@
+.gemini/
+gha-creds-*.json
+node_modules/
+.turbo/
+dist/
+.env
+.env.local
+.DS_Store
+*.log
+coverage/
+.svelte-kit/
+.next/

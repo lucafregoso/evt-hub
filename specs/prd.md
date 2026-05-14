@@ -1,9 +1,9 @@
-# Product Requirements Document (PRD) — confhub
+# Product Requirements Document (PRD) — evt-hub
 
 **Status**: DRAFT | **Version**: 0.1.0
 
 ## Vision
-`confhub` is an open-source session management platform designed for organizers of tech conferences and community events. It streamlines the lifecycle of an event from Call for Papers (CFP) to scheduling and on-site attendee engagement.
+`evt-hub` is an open-source session management platform designed for organizers of tech conferences and community events. It streamlines the lifecycle of an event from Call for Papers (CFP) to scheduling and on-site attendee engagement.
 
 ## Core Features (F01–F13)
 

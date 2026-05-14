@@ -1,0 +1,10 @@
+{
+  "name": "@confhub/api",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "echo building...",
+    "lint": "echo linting...",
+    "test": "echo testing...",
+    "typecheck": "echo typechecking..."
+  }
+}

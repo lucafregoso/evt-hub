@@ -1,4 +1,4 @@
-# CI/CD Pipeline Specification — confhub
+# CI/CD Pipeline Specification — evt-hub
 
 **Platform:** GitHub Actions (recommended — free tier sufficient for solo developer, native integration con GitHub, ampio ecosistema di actions)
 
@@ -60,7 +60,7 @@ jobs:
     services:
       postgres:
         image: postgres:16-alpine
-        env: { POSTGRES_DB: confhub_test, POSTGRES_USER: confhub, POSTGRES_PASSWORD: test }
+        env: { POSTGRES_DB: evt-hub_test, POSTGRES_USER: evt-hub, POSTGRES_PASSWORD: test }
         ports: ['5432:5432']
         options: --health-cmd pg_isready
       redis:
@@ -68,7 +68,7 @@ jobs:
         ports: ['6379:6379']
         options: --health-cmd "redis-cli ping"
     env:
-      DATABASE_URL: postgresql://confhub:test@localhost:5432/confhub_test
+      DATABASE_URL: postgresql://evt-hub:test@localhost:5432/evt-hub_test
       REDIS_URL: redis://localhost:6379
     steps:
       - run: pnpm --filter=db db:migrate

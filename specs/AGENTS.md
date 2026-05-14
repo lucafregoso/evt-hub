@@ -1,4 +1,4 @@
-# AGENTS.md — Conference Management Platform (confhub)
+# AGENTS.md — Conference Management Platform (evt-hub)
 
 > Read this file before any task. It contains **non-discoverable landmines and constraints** not visible from the codebase alone.
 > Modules with their own AGENTS.md: `apps/api/`, `apps/worker/`, `apps/web/`, `packages/db/`, `plugins/`.
@@ -29,7 +29,7 @@ pnpm --filter=web test:e2e   # Playwright (requires running stack first: pnpm de
 # 4. Restart apps/api and apps/worker
 
 # Plugins
-pnpm --filter=@confhub/plugin-slack dev   # Dev mode for built-in Slack plugin
+pnpm --filter=@evt-hub/plugin-slack dev   # Dev mode for built-in Slack plugin
 ```
 
 ---
@@ -54,7 +54,7 @@ pnpm --filter=@confhub/plugin-slack dev   # Dev mode for built-in Slack plugin
 
 **Email templates use Svelte components** in `packages/email/src/templates/` compiled to HTML via `@svelte-email` — not React Email. Do not install `@react-email/components`.
 
-**Webhooks use HMAC-SHA256 signature** — header `X-Confhub-Signature: sha256=<hex>`. The signing key is `WEBHOOK_SECRET` per integration (stored in `event_integrations.config.secret`, not in `.env`). Signature verification code is in `packages/shared/src/lib/webhook-signature.ts` — use it, don't rewrite.
+**Webhooks use HMAC-SHA256 signature** — header `X-evt-hub-Signature: sha256=<hex>`. The signing key is `WEBHOOK_SECRET` per integration (stored in `event_integrations.config.secret`, not in `.env`). Signature verification code is in `packages/shared/src/lib/webhook-signature.ts` — use it, don't rewrite.
 
 ---
 
@@ -73,7 +73,7 @@ pnpm --filter=@confhub/plugin-slack dev   # Dev mode for built-in Slack plugin
 4. Document in `docs/asyncapi/asyncapi.yaml`
 
 **Adding a new plugin:**
-1. Create `plugins/<name>/` with `package.json` referencing `@confhub/plugin-sdk`
+1. Create `plugins/<name>/` with `package.json` referencing `@evt-hub/plugin-sdk`
 2. Export a `PluginManifest` as default from `index.ts`
 3. Add package to `pnpm-workspace.yaml` and `plugins/` list in `.env` `PLUGINS_ENABLED`
 
