@@ -4,7 +4,7 @@
   "scripts": {
     "build": "echo building...",
     "lint": "echo linting...",
-    "test": "echo testing...",
+    "test:unit": "vitest run",
     "typecheck": "echo typechecking..."
   }
 }
