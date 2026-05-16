@@ -22,13 +22,13 @@ jobs:
     needs: setup
     runs-on: ubuntu-latest
     steps:
-      - run: pnpm turbo lint typecheck
+      - run: npx turbo lint typecheck
 
   test-unit:
     needs: setup
     runs-on: ubuntu-latest
     steps:
-      - run: pnpm turbo test:unit
+      - run: npx turbo test:unit
 
   test-integration:
     needs: setup
@@ -47,8 +47,7 @@ jobs:
       DATABASE_URL: postgresql://confhub:test@localhost:5432/confhub_test
       REDIS_URL: redis://localhost:6379
     steps:
-      # - run: pnpm --filter=@confhub/db db:migrate
-      - run: pnpm turbo test:integration
+      - run: npx turbo test:integration
 
   audit:
     needs: setup
