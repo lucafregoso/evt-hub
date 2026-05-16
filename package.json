@@ -20,10 +20,15 @@
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^25.8.0",
     "husky": "^9.0.11",
     "prisma": "^7.8.0",
     "prisma-kysely": "^3.1.0",
-    "turbo": "latest"
+    "ts-node": "^10.9.2",
+    "turbo": "latest",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.6"
   },
   "commitlint": {
     "extends": [
@@ -31,7 +36,12 @@
     ]
   },
   "dependencies": {
+    "@fastify/cookie": "^11.0.2",
     "@prisma/client": "^7.8.0",
+    "@types/cookie": "^1.0.0",
+    "cookie": "^1.1.1",
+    "fastify": "^5.8.5",
+    "jsonwebtoken": "^9.0.3",
     "kysely": "^0.29.0"
   }
 }
